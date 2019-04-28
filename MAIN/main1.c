@@ -46,8 +46,42 @@ int main()
 int month(){
 	scanf("%d",&cmonth);
 	switch(cmonth) {
-		case '1':
-			
+		case '1': 
+			jandatabaseWriteIncome();
+			jandatabaseWriteExpenses ();
+		case '2': 
+			febdatabaseWriteIncome ();
+			febdatabaseWriteExpenses ();
+		case '3': 
+			marchdatabaseWriteIncome ();
+			marchdatabaseWriteExpenses ();
+		case '4': 
+			aprdatabaseWriteIncome ();
+			aprdatabaseWriteExpenses ();
+		case '5': 
+			maydatabaseWriteIncome ();
+			maydatabaseWriteExpenses ();
+		case '6': 
+			junedatabaseWriteIncome ();
+			junedatabaseWriteExpenses ();
+		case '7': 
+			julydatabaseWriteIncome ();
+			julydatabaseWriteExpenses ();
+		case '8': 
+			augdatabaseWriteIncome ();
+			augdatabaseWriteExpenses ();
+		case '9': 
+			sepdatabaseWriteIncome ();
+			sepdatabaseWriteExpenses ();
+		case '10': 
+			octdatabaseWriteIncome ();
+			octdatabaseWriteExpenses ();
+		case '11': 
+			novdatabaseWriteIncome ();
+			novdatabaseWriteExpenses ();
+		case '12': 
+			decdatabaseWriteIncome ();
+			decdatabaseWriteExpenses ();
 	}
 
 }
