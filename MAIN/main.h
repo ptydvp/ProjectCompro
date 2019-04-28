@@ -1,21 +1,21 @@
-#include <stdio.h>                  
-#include <string.h>  
-#include <math.h>                  
-#include <stdlib.h>            
-#include <time.h>                  
-#include <ctype.h>                 
-#include <unistd.h> 
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+#include <time.h>
+#include <ctype.h>
+#include <unistd.h>
 
 //-------------------------------------------------------------------------------------------------------
 // varible
 //-------------------------------------------------------------------------------------------------------
 int income;
-int expeneses;
+int expenses;
 int totalmoney, totalincome, totalexpenses;
-int totaljan, totalfeb, totalmarch, totalapr, totalmarch, totaljune, totaljuly, totalaug, totalsep, totaloct, totalnov, totaldec;
-
+int totaljan, totalfeb, totalmarch, totalapr, totalmay, totaljune, totaljuly, totalaug, totalsep, totaloct, totalnov, totaldec;
+#include "database.c"
 //-------------------------------------------------------------------------------------------------------
-// # - File: SYSTEMCALL.c
+// 
 //-------------------------------------------------------------------------------------------------------
 /*Declare Database*/
 void jandatabase();

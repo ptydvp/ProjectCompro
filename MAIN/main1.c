@@ -1,13 +1,13 @@
 #include "main.h"
 
 int fchoice;
-int cmonth;
-int remainmon;
+
 int main()
 {
+	installdatabase();
 	printf("|>>> INCOME/OUTCOME PROGRAM <<<|\n");
 	printf("|>>> SELECT TOPICS <<<|\n");
-	printf("| 1.) SELECT MONTH \n", );
+	printf("| 1.) SELECT MONTH \n" );
 	printf("| 2.) REMAINING MONEY \n");
 	printf("| 3.) TOTAL INCOME \n");
 	printf("| 4.) TOTAL EXPENSES \n");
@@ -32,56 +32,83 @@ int main()
 		month();
 	}
 	if (fchoice == 2){
-		printf("Remaining Money: %d",allmoney)
+		printf("Remaining Money: %d",totalmoney);
 	}
 	if (fchoice == 3){
-		printf("Total Income: %d",allincome)
+		printf("Total Income: %d",totalincome);
 	}
-	if (fchoice == 5){
-		printf("Total Expenses: %d",allexpenses)
+	if (fchoice == 4){
+		printf("Total Expenses: %d",totalexpenses);
 	}
 	return 0;
 }
 
-int month(){
-	scanf("%d",&cmonth);
-	switch(cmonth) {
-		case '1': 
-			jandatabaseWriteIncome();
-			jandatabaseWriteExpenses ();
-		case '2': 
-			febdatabaseWriteIncome ();
-			febdatabaseWriteExpenses ();
-		case '3': 
-			marchdatabaseWriteIncome ();
-			marchdatabaseWriteExpenses ();
-		case '4': 
-			aprdatabaseWriteIncome ();
-			aprdatabaseWriteExpenses ();
-		case '5': 
-			maydatabaseWriteIncome ();
-			maydatabaseWriteExpenses ();
-		case '6': 
-			junedatabaseWriteIncome ();
-			junedatabaseWriteExpenses ();
-		case '7': 
-			julydatabaseWriteIncome ();
-			julydatabaseWriteExpenses ();
-		case '8': 
-			augdatabaseWriteIncome ();
-			augdatabaseWriteExpenses ();
-		case '9': 
-			sepdatabaseWriteIncome ();
-			sepdatabaseWriteExpenses ();
-		case '10': 
-			octdatabaseWriteIncome ();
-			octdatabaseWriteExpenses ();
-		case '11': 
-			novdatabaseWriteIncome ();
-			novdatabaseWriteExpenses ();
-		case '12': 
-			decdatabaseWriteIncome ();
-			decdatabaseWriteExpenses ();
+void month(){
+	int cmonth;
+	scanf("%d", &cmonth);
+	if (cmonth == 1)
+	{
+		jandatabaseWriteIncome();
+		jandatabaseWriteExpenses ();
+	}
+	else if (cmonth == 2)
+	{
+		febdatabaseWriteIncome ();
+		febdatabaseWriteExpenses ();
+	}
+	else if (cmonth == 3)
+	{
+		marchdatabaseWriteIncome ();
+		marchdatabaseWriteExpenses ();
+	}
+	else if (cmonth == 4)
+	{
+		aprdatabaseWriteIncome ();
+		aprdatabaseWriteExpenses ();
+	}
+	else if (cmonth == 5)
+	{
+		maydatabaseWriteIncome ();
+		maydatabaseWriteExpenses ();
+	}
+	else if (cmonth == 6)
+	{
+		junedatabaseWriteIncome ();
+		junedatabaseWriteExpenses ();
+	}
+	else if (cmonth == 7)
+	{
+		julydatabaseWriteIncome ();
+		julydatabaseWriteExpenses ();
+	}
+	else if (cmonth == 8)
+	{
+		augdatabaseWriteIncome ();
+		augdatabaseWriteExpenses ();
+	}
+	else if (cmonth == 9)
+	{
+		sepdatabaseWriteIncome ();
+		sepdatabaseWriteExpenses ();
+	}
+	else if (cmonth == 10)
+	{
+		octdatabaseWriteIncome ();
+		octdatabaseWriteExpenses ();
+	}
+	else if (cmonth == 11)
+	{
+		novdatabaseWriteIncome ();
+		novdatabaseWriteExpenses ();
+	}
+	else if (cmonth == 12)
+	{
+		decdatabaseWriteIncome ();
+		decdatabaseWriteExpenses ();
+	}
+	else if (cmonth>12)
+	{
+		printf("Error\n");
 	}
 
 }
