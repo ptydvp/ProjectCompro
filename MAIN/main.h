@@ -12,6 +12,8 @@
 int income;
 int expenses;
 int totalmoney, totalincome, totalexpenses;
+char inputincome;
+char inputexpenses;
 int totaljan, totalfeb, totalmarch, totalapr, totalmay, totaljune, totaljuly, totalaug, totalsep, totaloct, totalnov, totaldec;
 #include "database.c"
 //-------------------------------------------------------------------------------------------------------

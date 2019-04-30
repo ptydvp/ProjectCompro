@@ -341,8 +341,8 @@ void jandatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (jandata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
- 	fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+ 	fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -350,8 +350,8 @@ void jandatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (janexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -359,8 +359,8 @@ void febdatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (febdata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -368,8 +368,8 @@ void febdatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (febexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -377,8 +377,8 @@ void marchdatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (marchdata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -386,8 +386,8 @@ void marchdatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (marchexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -395,8 +395,8 @@ void aprdatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (aprdata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -404,8 +404,8 @@ void aprdatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (aprexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -413,8 +413,8 @@ void maydatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (maydata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -422,8 +422,8 @@ void maydatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (mayexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -431,8 +431,8 @@ void junedatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (junedata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -440,8 +440,8 @@ void junedatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (juneexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -449,8 +449,8 @@ void julydatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (julydata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -458,8 +458,8 @@ void julydatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (julyexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -467,8 +467,8 @@ void augdatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (augdata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -476,8 +476,8 @@ void augdatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (augexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -485,8 +485,8 @@ void sepdatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (sepdata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -494,8 +494,8 @@ void sepdatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (sepexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -503,8 +503,8 @@ void octdatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (octdata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -512,8 +512,8 @@ void octdatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (octexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -521,8 +521,8 @@ void novdatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (novdata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -530,8 +530,8 @@ void novdatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (novexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
@@ -539,8 +539,8 @@ void decdatabaseWriteIncome () {
     FILE *fp;
     fp = fopen (decdata, "a");
 	printf("Enter your income\n");
- 	scanf("%s", &income);
-    fprintf(fp,"%s\n",&income);
+ 	scanf("%s", &inputincome);
+    fprintf(fp,"%s\n",&inputincome);
     fclose (fp);
 }
 
@@ -548,8 +548,8 @@ void decdatabaseWriteExpenses () {
     FILE *fp;
     fp = fopen (decexdata, "a");
 	printf("Enter your expenses\n");
- 	scanf("%s", &expenses);
-    fprintf(fp,"%s\n",&expenses);
+ 	scanf("%s", &inputexpenses);
+    fprintf(fp,"%s\n",&inputexpenses);
     fclose (fp);
 }
 
