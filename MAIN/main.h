@@ -11,6 +11,7 @@
 //-------------------------------------------------------------------------------------------------------
 int income, input;
 int expenses, out;
+int fchoice;
 int totalmoney, totalincome, totalexpenses;
 int totaljan, totalfeb, totalmarch, totalapr, totalmay, totaljune, totaljuly, totalaug, totalsep, totaloct, totalnov, totaldec;
 #include "database.c"
@@ -82,3 +83,11 @@ void novdatabaseWriteIncome ();
 void novdatabaseWriteExpenses ();
 void decdatabaseWriteIncome ();
 void decdatabaseWriteExpenses ();
+
+// function month
+void month();
+
+/* text */
+void topic();
+void urfinance();
+void endbar();

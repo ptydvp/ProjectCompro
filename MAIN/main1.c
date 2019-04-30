@@ -1,32 +1,20 @@
 #include "main.h"
 
-int fchoice;
-
 int main() {
 	installdatabase();
-	printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
-    printf("::                     █    █  ████  █████ ███  █   █   ███  █   █  ████  ███  ███  █                        ::\n");
-    printf("::                     █    █  █   █ █      █   ██  █  █   █ ██  █ █       █  █   █ █                        ::\n");
-    printf("::                     █    █  ████  ███    █   █ █ █  █████ █ █ █ █       █  █████ █                        ::\n");
-    printf("::                     ██████  █   █ █     ███  █  ██  █   █ █  ██  ████  ███ █   █ █████                    ::\n");
-    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
-    printf("::                                   >>> INCOME/OUTCOME PROGRAM <<<                                          ::\n");
+	urfinance();
+	printf("::                                   >>> INCOME/OUTCOME PROGRAM <<<                                          ::\n");
     printf("::                                        >>> SELECT TOPICS <<<                                              ::\n");
-    printf("::                                          1.) SELECT MONTH                                                 ::\n");
-    printf("::                                          2.) REMAINING MONEY                                              ::\n");
-    printf("::                                          3.) TOTAL INCOME                                                 ::\n");
-    printf("::                                          4.) TOTAL EXPENSES                                               ::\n");
-    printf("::                                          5.) EXIT PROGRAM                                                 ::\n");
-    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+	printf("::                                          1.) SELECT MONTH                                                 ::\n");
+	printf("::                                          2.) REMAINING MONEY                                              ::\n");
+	printf("::                                          3.) TOTAL INCOME                                                 ::\n");
+	printf("::                                          4.) TOTAL EXPENSES                                               ::\n");
+	printf("::                                          5.) EXIT PROGRAM                                                 ::\n");
+	endbar();
 	scanf("%d",&fchoice);
 	if (fchoice == 1)
 	{
-		printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
-    	printf("::                     █    █  ████  █████ ███  █   █   ███  █   █  ████  ███  ███  █                        ::\n");
-    	printf("::                     █    █  █   █ █      █   ██  █  █   █ ██  █ █       █  █   █ █                        ::\n");
-    	printf("::                     █    █  ████  ███    █   █ █ █  █████ █ █ █ █       █  █████ █                        ::\n");
-    	printf("::                     ██████  █   █ █     ███  █  ██  █   █ █  ██  ████  ███ █   █ █████                    ::\n");
-    	printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+		urfinance();
     	printf("::                                 >>> Input your month number <<<                                           ::\n");
 		printf("::                                      >>> Number Only <<<                                                  ::\n");
 		printf("::                                          1.) January                                                      ::\n");
@@ -41,17 +29,28 @@ int main() {
 		printf("::                                          10.) October                                                     ::\n");
 		printf("::                                          11.) November                                                    ::\n");
 		printf("::                                          12.) December                                                    ::\n");
- 	    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+ 	    endbar();
 		month();
 	}
 	if (fchoice == 2) {
-		printf("::                                          Remaining Money: %d                                             ::\n",totalmoney);
+		endbar();
+		printf("::                                          Remaining Money: %d                                               ::\n",totalmoney);
+		endbar();
 	}
 	if (fchoice == 3) {
+		endbar();
 		printf("::                                       Total Income: %d  				                     ::\n",totalincome);
+		endbar();
 	}
 	if (fchoice == 4) {
-		printf("::                                           Total Expenses: %d                                            ::\n",totalexpenses);
+		endbar();
+		printf("::                                           Total Expenses: %d                                               ::\n",totalexpenses);
+		endbar();
+	}
+	if (fchoice == 5) {
+		urfinance();
+		printf("::			                         THANK YOU						     ::\n");
+		endbar();
 	}
 	return 0;
 }
