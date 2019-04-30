@@ -9,8 +9,8 @@
 //-------------------------------------------------------------------------------------------------------
 // varible
 //-------------------------------------------------------------------------------------------------------
-int income;
-int expenses;
+int income, input;
+int expenses, out;
 int totalmoney, totalincome, totalexpenses;
 int totaljan, totalfeb, totalmarch, totalapr, totalmay, totaljune, totaljuly, totalaug, totalsep, totaloct, totalnov, totaldec;
 #include "database.c"
