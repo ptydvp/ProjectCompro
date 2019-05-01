@@ -18,14 +18,14 @@
 
 <tbody>
 <tr>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/image"><img src="/image" width="300"  height="297" style="max-width:100%;"></a></td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/image/pew.jpg"><img src="/image/pew.jpg" width="300"  height="300" style="max-width:100%;"></a></td>
 <td>Palat</td>
 <td>Sirapobwongsakul</td>
 <td><a href="https://github.com/pk7319">@pk7319</a></td>
 <td align="center">61070130</td>
 </tr>
 <tr>
-<td align="center"><a target="_blank" rel="noopener noreferrer" href="/Image/"><img src="/image/" width="256"  height="318" style="max-width:100%;"></a></td>
+<td align="center"><a target="_blank" rel="noopener noreferrer" href="/Image/tiger.jpg"><img src="/image/tiger.jpg" width="300"  height="300" style="max-width:100%;"></a></td>
 <td>Pasathorn</td>
 <td>Pakjamsai</td>
 <td><a href="https://github.com/it61070132">@it61070132</a></td>
