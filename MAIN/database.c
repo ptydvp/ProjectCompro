@@ -342,6 +342,9 @@ void jandatabaseWriteIncome () {
     fp = fopen (jandata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totaljan = totaljan + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
  	fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -351,6 +354,9 @@ void jandatabaseWriteExpenses () {
     fp = fopen (janexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totaljan = totaljan - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -360,6 +366,9 @@ void febdatabaseWriteIncome () {
     fp = fopen (febdata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totalfeb = totalfeb + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -369,6 +378,9 @@ void febdatabaseWriteExpenses () {
     fp = fopen (febexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totalfeb = totalfeb - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -378,6 +390,9 @@ void marchdatabaseWriteIncome () {
     fp = fopen (marchdata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totalmarch = totalmarch + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -387,6 +402,9 @@ void marchdatabaseWriteExpenses () {
     fp = fopen (marchexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totalmarch = totalmarch - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -396,6 +414,9 @@ void aprdatabaseWriteIncome () {
     fp = fopen (aprdata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totalapr = totalapr + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -405,6 +426,9 @@ void aprdatabaseWriteExpenses () {
     fp = fopen (aprexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totalapr = totalapr - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -414,6 +438,9 @@ void maydatabaseWriteIncome () {
     fp = fopen (maydata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totalmay = totalmay + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -423,6 +450,9 @@ void maydatabaseWriteExpenses () {
     fp = fopen (mayexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totalmay = totalmay - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -432,6 +462,9 @@ void junedatabaseWriteIncome () {
     fp = fopen (junedata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totaljune = totaljune + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -441,6 +474,9 @@ void junedatabaseWriteExpenses () {
     fp = fopen (juneexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totaljune = totaljune - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -450,6 +486,9 @@ void julydatabaseWriteIncome () {
     fp = fopen (julydata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totaljuly = totaljuly + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -459,6 +498,9 @@ void julydatabaseWriteExpenses () {
     fp = fopen (julyexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totaljuly = totaljuly - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -468,6 +510,9 @@ void augdatabaseWriteIncome () {
     fp = fopen (augdata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totalaug = totalaug + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -477,6 +522,9 @@ void augdatabaseWriteExpenses () {
     fp = fopen (augexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totalaug = totalaug - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -486,6 +534,9 @@ void sepdatabaseWriteIncome () {
     fp = fopen (sepdata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totalsep = totalsep + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -495,6 +546,9 @@ void sepdatabaseWriteExpenses () {
     fp = fopen (sepexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totalsep = totalsep - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -504,6 +558,9 @@ void octdatabaseWriteIncome () {
     fp = fopen (octdata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totaloct = totaloct + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -513,6 +570,9 @@ void octdatabaseWriteExpenses () {
     fp = fopen (octexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totaloct = totaloct - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -522,6 +582,9 @@ void novdatabaseWriteIncome () {
     fp = fopen (novdata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totalnov = totalnov + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -531,6 +594,9 @@ void novdatabaseWriteExpenses () {
     fp = fopen (novexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totalnov = totalnov - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -540,6 +606,9 @@ void decdatabaseWriteIncome () {
     fp = fopen (decdata, "a");
 	printf("Enter your income\n");
  	scanf("%d", &input);
+ 	totaldec = totaldec + input;
+ 	totalincome = totalincome + input;
+ 	totalmoney = totalmoney + input;
     fprintf(fp,"%d\n", input);
     fclose (fp);
 }
@@ -549,6 +618,9 @@ void decdatabaseWriteExpenses () {
     fp = fopen (decexdata, "a");
 	printf("Enter your expenses\n");
  	scanf("%d", &out);
+ 	totaldec = totaldec - out;
+ 	totalexpenses = totalexpenses + out;
+ 	totalmoney = totalmoney - out;
     fprintf(fp,"%d\n", out);
     fclose (fp);
 }
@@ -604,62 +676,6 @@ void endbar() {
     printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
 }
 
-void firstpage() {
-	urfinance();
-	printf("::                                   >>> INCOME/OUTCOME PROGRAM <<<                                          ::\n");
-    printf("::                                        >>> SELECT TOPICS <<<                                              ::\n");
-	printf("::                                          1.) SELECT MONTH                                                 ::\n");
-	printf("::                                          2.) REMAINING MONEY                                              ::\n");
-	printf("::                                          3.) TOTAL INCOME                                                 ::\n");
-	printf("::                                          4.) TOTAL EXPENSES                                               ::\n");
-	printf("::                                          5.) EXIT PROGRAM                                                 ::\n");
-	endbar();
-	scanf("%d",&fchoice);
-	if (fchoice == 1)
-	{
-		urfinance();
-    	printf("::                                 >>> Input your month number <<<                                           ::\n");
-		printf("::                                      >>> Number Only <<<                                                  ::\n");
-		printf("::                                          1.) January                                                      ::\n");
-		printf("::                                          2.) February                                                     ::\n");
-		printf("::                                          3.) March                                                        ::\n");
-		printf("::                                          4.) April                                                        ::\n");
-  		printf("::                                          5.) May                                                          ::\n");
-		printf("::                                          6.) June                                                         ::\n");
-		printf("::                                          7.) July                                                         ::\n");
-		printf("::                                          8.) August                                                       ::\n");
-		printf("::                                          9.) September                                                    ::\n");
-		printf("::                                          10.) October                                                     ::\n");
-		printf("::                                          11.) November                                                    ::\n");
-		printf("::                                          12.) December                                                    ::\n");
- 	    endbar();
-		month();
-	}
-	if (fchoice == 2) {
-		endbar();
-		printf("::                                          Remaining Money: %d                                               ::\n",totalmoney);
-		endbar();
-		firstpage();
-	}
-	if (fchoice == 3) {
-		endbar();
-		printf("::                                       Total Income: %d  				                     ::\n",totalincome);
-		endbar();
-		firstpage();
-	}
-	if (fchoice == 4) {
-		endbar();
-		printf("::                                           Total Expenses: %d                                               ::\n",totalexpenses);
-		endbar();
-		firstpage();
-	}
-	if (fchoice == 5) {
-		urfinance();
-		printf("::			                         THANK YOU						     ::\n");
-		endbar();
-	}
-	return 0;
-}
 
 void month() {
 	int cmonth;
@@ -853,4 +869,59 @@ void month() {
 }
 
 
+void firstpage() {
+	urfinance();
+	printf("::                                   >>> INCOME/OUTCOME PROGRAM <<<                                          ::\n");
+    printf("::                                        >>> SELECT TOPICS <<<                                              ::\n");
+	printf("::                                          1.) SELECT MONTH                                                 ::\n");
+	printf("::                                          2.) REMAINING MONEY                                              ::\n");
+	printf("::                                          3.) TOTAL INCOME                                                 ::\n");
+	printf("::                                          4.) TOTAL EXPENSES                                               ::\n");
+	printf("::                                          5.) EXIT PROGRAM                                                 ::\n");
+	endbar();
+	scanf("%d",&fchoice);
+	if (fchoice == 1)
+	{
+		urfinance();
+    	printf("::                                 >>> Input your month number <<<                                           ::\n");
+		printf("::                                      >>> Number Only <<<                                                  ::\n");
+		printf("::                                          1.) January                                                      ::\n");
+		printf("::                                          2.) February                                                     ::\n");
+		printf("::                                          3.) March                                                        ::\n");
+		printf("::                                          4.) April                                                        ::\n");
+  		printf("::                                          5.) May                                                          ::\n");
+		printf("::                                          6.) June                                                         ::\n");
+		printf("::                                          7.) July                                                         ::\n");
+		printf("::                                          8.) August                                                       ::\n");
+		printf("::                                          9.) September                                                    ::\n");
+		printf("::                                          10.) October                                                     ::\n");
+		printf("::                                          11.) November                                                    ::\n");
+		printf("::                                          12.) December                                                    ::\n");
+ 	    endbar();
+		month();
+	}
+	if (fchoice == 2) {
+		endbar();
+		printf("::                                          Remaining Money: %d                                               ::\n",totalmoney);
+		endbar();
+		firstpage();
+	}
+	if (fchoice == 3) {
+		endbar();
+		printf("::                                       Total Income: %d  				                     ::\n",totalincome);
+		endbar();
+		firstpage();
+	}
+	if (fchoice == 4) {
+		endbar();
+		printf("::                                           Total Expenses: %d                                               ::\n",totalexpenses);
+		endbar();
+		firstpage();
+	}
+	if (fchoice == 5) {
+		urfinance();
+		printf("::			                         THANK YOU						     ::\n");
+		endbar();
+	}
+}
 
