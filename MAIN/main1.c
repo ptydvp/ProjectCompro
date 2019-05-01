@@ -36,16 +36,19 @@ int main() {
 		endbar();
 		printf("::                                          Remaining Money: %d                                               ::\n",totalmoney);
 		endbar();
+		firstpage();
 	}
 	if (fchoice == 3) {
 		endbar();
 		printf("::                                       Total Income: %d  				                     ::\n",totalincome);
 		endbar();
+		firstpage();
 	}
 	if (fchoice == 4) {
 		endbar();
 		printf("::                                           Total Expenses: %d                                               ::\n",totalexpenses);
 		endbar();
+		firstpage();
 	}
 	if (fchoice == 5) {
 		urfinance();

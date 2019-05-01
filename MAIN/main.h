@@ -84,8 +84,9 @@ void novdatabaseWriteExpenses ();
 void decdatabaseWriteIncome ();
 void decdatabaseWriteExpenses ();
 
-// function month
+// function
 void month();
+void firstpage();
 
 /* text */
 void topic();

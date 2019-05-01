@@ -553,192 +553,6 @@ void decdatabaseWriteExpenses () {
     fclose (fp);
 }
 
-void topic() {
-    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
-	printf("::                                           >>> SELECT TOPICS <<<                                           ::\n");
-    printf("::                                                1.) Income                                                 ::\n");
-    printf("::                                                2.) Expenses                                               ::\n");
-    printf("::                                    3.) Remainning Money This Month                                        ::\n");
-    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
-}
-
-void urfinance() {
-    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
-    printf("::                     █    █  ████  █████ ███  █   █   ███  █   █  ████  ███  ███  █                        ::\n");
-    printf("::                     █    █  █   █ █      █   ██  █  █   █ ██  █ █       █  █   █ █                        ::\n");
-    printf("::                     █    █  ████  ███    █   █ █ █  █████ █ █ █ █       █  █████ █                        ::\n");
-    printf("::                     ██████  █   █ █     ███  █  ██  █   █ █  ██  ████  ███ █   █ █████                    ::\n");
-    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
-}
-
-void endbar() {
-    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
-}
-
-void month() {
-	int cmonth;
-	int inout;
-	scanf("%d", &cmonth);
-	if (cmonth == 1)
-	{
-        topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			jandatabaseWriteIncome();
-		} else if (inout == 2) {
-			jandatabaseWriteExpenses();
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totaljan);
-		}
-		
-	}
-	else if (cmonth == 2)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			febdatabaseWriteIncome();
-		} else if (inout == 2) {
-			febdatabaseWriteExpenses();
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totalfeb);
-		}
-	}
-	else if (cmonth == 3)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			marchdatabaseWriteIncome();
-		} else if (inout == 2) {
-			marchdatabaseWriteExpenses();	
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totalmarch);
-		}	
-	}
-	else if (cmonth == 4)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			aprdatabaseWriteIncome ();
-		} else if (inout == 2) {
-			aprdatabaseWriteExpenses ();	
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totalapr);
-        }
-	}
-	else if (cmonth == 5)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			maydatabaseWriteIncome ();
-		} else if (inout == 2) {
-			maydatabaseWriteExpenses ();
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totalmay);
-        }
-	}
-	else if (cmonth == 6)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			junedatabaseWriteIncome ();
-		} else if (inout == 2) {
-			junedatabaseWriteExpenses ();
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totaljune);
-        }
-	}
-	else if (cmonth == 7)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			julydatabaseWriteIncome ();
-		} else if (inout == 2) {
-			julydatabaseWriteExpenses ();
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totaljuly);
-        }
-	}
-	else if (cmonth == 8)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			augdatabaseWriteIncome ();
-		} else if (inout == 2) {
-			augdatabaseWriteExpenses ();
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totalaug);	
-        }
-	}
-	else if (cmonth == 9)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			sepdatabaseWriteIncome ();
-		} else if (inout == 2) {
-			sepdatabaseWriteExpenses ();
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totalsep);
-        }
-	}
-	else if (cmonth == 10)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			octdatabaseWriteIncome ();
-		} else if (inout == 2) {
-			octdatabaseWriteExpenses ();
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totaloct);
-        }
-	}
-	else if (cmonth == 11)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			novdatabaseWriteIncome ();
-		} else if (inout == 2) {
-			novdatabaseWriteExpenses ();
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totalnov);
-        }
-	}
-	else if (cmonth == 12)
-	{
-		topic();
-		scanf("%d", &inout);
-		if (inout == 1) {
-			decdatabaseWriteIncome ();
-		} else if (inout == 2) {
-			decdatabaseWriteExpenses ();
-		} else if (inout == 3) {
-			printf("::                                The remaining balance in this month is %d                                   ::\n", totaldec);
-        }
-	}
-	else if (cmonth > 12)
-	{
-		urfinance();
-	    printf("::                                      >>> PLEASE INPUT AGAIN <<<                                           ::\n");
-        printf("::                                        >>> SELECT TOPICS <<<                                              ::\n");
-	    printf("::                                          1.) SELECT MONTH                                                 ::\n");
-	    printf("::                                          2.) REMAINING MONEY                                              ::\n");
-	    printf("::                                          3.) TOTAL INCOME                                                 ::\n");
-	    printf("::                                          4.) TOTAL EXPENSES                                               ::\n");
-	    printf("::                                          5.) EXIT PROGRAM                                                 ::\n");
-	    endbar();
-	    scanf("%d",&fchoice);
-	}
-}
-
 void installdatabase(){
 
 	jandatabaseRead();
@@ -767,3 +581,233 @@ void installdatabase(){
 	novexdatabaseRead();
 	decexdatabaseRead();
 }
+
+void topic() {
+    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+	printf("::                                           >>> SELECT TOPICS <<<                                           ::\n");
+    printf("::                                                1.) Income                                                 ::\n");
+    printf("::                                                2.) Expenses                                               ::\n");
+    printf("::                                    3.) Remainning Money This Month                                        ::\n");
+    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+}
+
+void urfinance() {
+    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+    printf("::                     █    █  ████  █████ ███  █   █   ███  █   █  ████  ███  ███  █                        ::\n");
+    printf("::                     █    █  █   █ █      █   ██  █  █   █ ██  █ █       █  █   █ █                        ::\n");
+    printf("::                     █    █  ████  ███    █   █ █ █  █████ █ █ █ █       █  █████ █                        ::\n");
+    printf("::                     ██████  █   █ █     ███  █  ██  █   █ █  ██  ████  ███ █   █ █████                    ::\n");
+    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+}
+
+void endbar() {
+    printf(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::\n");
+}
+
+void firstpage() {
+    installdatabase();
+	urfinance();
+	printf("::                                   >>> INCOME/OUTCOME PROGRAM <<<                                          ::\n");
+    printf("::                                        >>> SELECT TOPICS <<<                                              ::\n");
+	printf("::                                          1.) SELECT MONTH                                                 ::\n");
+	printf("::                                          2.) REMAINING MONEY                                              ::\n");
+	printf("::                                          3.) TOTAL INCOME                                                 ::\n");
+	printf("::                                          4.) TOTAL EXPENSES                                               ::\n");
+	printf("::                                          5.) EXIT PROGRAM                                                 ::\n");
+	endbar();
+	scanf("%d",&fchoice);
+}
+
+void month() {
+	int cmonth;
+	int inout;
+	scanf("%d", &cmonth);
+	if (cmonth == 1)
+	{
+        topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			jandatabaseWriteIncome();
+            firstpage();
+		} else if (inout == 2) {
+			jandatabaseWriteExpenses();
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totaljan);
+            firstpage();
+		}
+		
+	}
+	else if (cmonth == 2)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			febdatabaseWriteIncome();
+            firstpage();
+		} else if (inout == 2) {
+			febdatabaseWriteExpenses();
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totalfeb);
+            firstpage();
+		}
+	}
+	else if (cmonth == 3)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			marchdatabaseWriteIncome();
+            firstpage();
+		} else if (inout == 2) {
+			marchdatabaseWriteExpenses();	
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totalmarch);
+            firstpage();
+		}	
+	}
+	else if (cmonth == 4)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			aprdatabaseWriteIncome ();
+            firstpage();
+		} else if (inout == 2) {
+			aprdatabaseWriteExpenses ();	
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totalapr);
+            firstpage();
+        }
+	}
+	else if (cmonth == 5)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			maydatabaseWriteIncome ();
+            firstpage();
+		} else if (inout == 2) {
+			maydatabaseWriteExpenses ();
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totalmay);
+            firstpage();
+        }
+	}
+	else if (cmonth == 6)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			junedatabaseWriteIncome ();
+            firstpage();
+		} else if (inout == 2) {
+			junedatabaseWriteExpenses ();
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totaljune);
+            firstpage();
+        }
+	}
+	else if (cmonth == 7)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			julydatabaseWriteIncome ();
+            firstpage();
+		} else if (inout == 2) {
+			julydatabaseWriteExpenses ();
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totaljuly);
+            firstpage();
+        }
+	}
+	else if (cmonth == 8)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			augdatabaseWriteIncome ();
+            firstpage();
+		} else if (inout == 2) {
+			augdatabaseWriteExpenses ();
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totalaug);	
+            firstpage();
+        }
+	}
+	else if (cmonth == 9)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			sepdatabaseWriteIncome ();
+            firstpage();
+		} else if (inout == 2) {
+			sepdatabaseWriteExpenses ();
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totalsep);
+            firstpage();
+        }
+	}
+	else if (cmonth == 10)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			octdatabaseWriteIncome ();
+            firstpage();
+		} else if (inout == 2) {
+			octdatabaseWriteExpenses ();
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totaloct);
+            firstpage();
+        }
+	}
+	else if (cmonth == 11)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			novdatabaseWriteIncome ();
+            firstpage();
+		} else if (inout == 2) {
+			novdatabaseWriteExpenses ();
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totalnov);
+            firstpage();
+        }
+	}
+	else if (cmonth == 12)
+	{
+		topic();
+		scanf("%d", &inout);
+		if (inout == 1) {
+			decdatabaseWriteIncome ();
+            firstpage();
+		} else if (inout == 2) {
+			decdatabaseWriteExpenses ();
+            firstpage();
+		} else if (inout == 3) {
+			printf("::                                The remaining balance in this month is %d                                   ::\n", totaldec);
+            firstpage();
+        }
+	}
+	else if (cmonth > 12)
+	{
+		firstpage();
+	}
+}
+
+
+
