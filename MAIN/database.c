@@ -1,4 +1,4 @@
-
+void firstpage();
 const char *jandata = "Database/janincome.txt";
 const char *febdata = "Database/febincome.txt";
 const char *marchdata = "Database/marchincome.txt";
