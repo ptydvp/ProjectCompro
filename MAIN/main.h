@@ -14,7 +14,7 @@ int expenses, out;
 int fchoice;
 int totalmoney, totalincome, totalexpenses;
 int totaljan, totalfeb, totalmarch, totalapr, totalmay, totaljune, totaljuly, totalaug, totalsep, totaloct, totalnov, totaldec;
-#include "database.c"
+
 //-------------------------------------------------------------------------------------------------------
 // 
 //-------------------------------------------------------------------------------------------------------
@@ -92,3 +92,5 @@ void firstpage();
 void topic();
 void urfinance();
 void endbar();
+
+#include "database.c"
